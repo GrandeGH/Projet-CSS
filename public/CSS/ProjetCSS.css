@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 body {
     margin: 0;
     background-color: white;
@@ -10,4 +12,28 @@ header {
     background-position: center;
     width: 100%;
     height: 600px;
+}
+
+.barber {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: "Archivo Black", sans-serif;
+    & .texte_gris {
+        margin: 0;
+        font-size: 40px;
+    }
+    & h1 {
+        font-size: 50px;    }
+    & .font_diff {
+        margin: 0;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 10px;
+    }
+    button {
+
+    }
 }
