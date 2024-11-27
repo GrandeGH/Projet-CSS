@@ -149,3 +149,42 @@ section:nth-of-type(3) {
         }
     }
 }
+
+/* -----My Pricing------ */
+
+section:nth-of-type(4) {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & .my_pricing {
+        border: 1px black solid;
+        background-color: red;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        & .my_pricing_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px black solid;
+        }
+        & img {
+            width: 70px;
+            height: auto;
+        }
+    }
+}
+
+.trois-colonnes {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    & div {
+        border: 1px black solid;
+    }
+}
