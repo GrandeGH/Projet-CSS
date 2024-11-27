@@ -5,11 +5,24 @@ body {
     background-color: white;
 }
 
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+    color: rgb(91, 84, 122);
+    margin: 0;
+}
+
+.texte_gris_2 {
+    color: gray;
+}
+
+/* en tête */
+
 header {
     padding-top: 1px;
     background-image: linear-gradient(to bottom,#ffffff00 0%, #ffffff), url(img/header.jpg);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     width: 100%;
     height: 600px;
 }
@@ -18,22 +31,55 @@ header {
     margin-top: 130px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
     font-family: "Archivo Black", sans-serif;
     & .texte_gris {
         margin: 0;
-        font-size: 40px;
+        margin-bottom: 20px;
+        font-size: 45px;
+        color: rgb(77, 77, 77);
     }
     & h1 {
-        font-size: 50px;    }
+        color: rgb(63, 58, 88);
+        margin: 0;
+        font-size: 70px;
+    }
     & .font_diff {
         margin: 0;
         font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-bottom: 10px;
     }
     button {
+        width: 120px;
+        height: 40px;
+        background-color: rgb(97, 77, 135);
+        color: white;
+        border-radius: 30px;
+        border: none;
+        margin-top: 20px;
+    }
+}
 
+/* -----about me------ */
+section:first-of-type {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    & div {
+        margin: 10px;
+        padding-right: 60px;
+        & button {
+            width: 120px;
+            height: 40px;
+            background-color: transparent;
+            color: rgb(97, 77, 135);
+            border: rgb(97, 77, 135) 1.5px solid;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
     }
 }
