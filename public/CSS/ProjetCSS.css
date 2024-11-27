@@ -153,38 +153,77 @@ section:nth-of-type(3) {
 /* -----My Pricing------ */
 
 section:nth-of-type(4) {
-    width: 80%;
-    height: 600px;
+    width: 100%;
+    height: 700px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    & .my_pricing {
-        border: 1px black solid;
-        background-color: red;
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        & .my_pricing_2 {
+    & h1 {
+        margin-bottom: 50px;
+    } 
+    .trois-colonnes {
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        & h1 {
+            margin-bottom: 10px;
+        }
+        & div {
+            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border: 1px black solid;
-        }
-        & img {
-            width: 70px;
-            height: auto;
+            border: 1px rgb(126, 126, 126) solid;
+            & p {
+                margin: 10px;
+            }
+            & img {
+                margin-top: 10px;
+                width: 70px;
+                height: auto;
+            }
+            & .croix_rouge {
+                width: 20px;
+                height: 20px;
+                margin: 7px;
+            }
+            & button {
+                font-size: 15px;
+                background-color: rgb(97, 77, 135);
+                color: white;
+                width: 100px;
+                height: 35px;
+                border: none;
+                border-radius: 2px;
+                margin-block: 15px;
+            }
+            & .prix {
+                font-size: 30px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
         }
     }
 }
 
 .trois-colonnes {
+    width: 80%;
+    height: auto;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     & div {
-        border: 1px black solid;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px rgb(126, 126, 126) solid;
+        & img {
+            width: 70px;
+            height: auto;
+        }
     }
 }
