@@ -73,7 +73,6 @@ header {
 
 /* -----about me------ */
 section:first-of-type {
-    margin: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -326,7 +325,6 @@ section:nth-of-type(7) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
     & h1 {
         margin-bottom: 40px;
     }
@@ -336,7 +334,7 @@ section:nth-of-type(7) {
         display: flex;
         justify-content: center;
         flex-direction: row;
-        border: 1px black solid;
+        border: 1px rgb(157, 157, 157) solid;
         margin-left: 50px;
         & .img_blog {
             width: 330px;
@@ -344,7 +342,7 @@ section:nth-of-type(7) {
             background-image: url(img/img-1.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 440px;
+            background-size: 450px;
         }
         & .blog2 {
             margin: 20px;
@@ -353,6 +351,7 @@ section:nth-of-type(7) {
                 font-family: "Archivo Black", sans-serif;
             }
             & .blog3 {
+                color: gray;
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -364,10 +363,15 @@ section:nth-of-type(7) {
             & .bold {
                 font-weight: bold;
             }
-            & button {
-                border: none;
-                background-color: transparent;
-                color: rgb(97, 77, 135);
+            & .read_more {
+                display: flex;
+                align-items: center;
+                & button {
+                    border: none;
+                    background-color: transparent;
+                    color: rgb(97, 77, 135);
+                    font-weight: bold;
+                }
             }
         }
     }
