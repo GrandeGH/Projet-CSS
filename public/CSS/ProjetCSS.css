@@ -2,7 +2,9 @@
 
 body {
     margin: 0;
-    background-color: white;
+    width: 100wh;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
 }
 
 section {
@@ -338,7 +340,7 @@ section:nth-of-type(7) {
             background-image: url(img/img-1.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 430px;
+            background-size: 440px;
         }
         & .blog2 {
             margin: 20px;
