@@ -410,6 +410,9 @@ section:nth-of-type(8) {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        & h1 {
+            font-size: 30px;
+        }
         & nav ul {
             margin-bottom: 3px;
             display: flex;
@@ -455,7 +458,9 @@ section:nth-of-type(8) {
     }
 }
 
-
+.hrfooter {
+    width: 76%;
+}
 
 /* ---------footer-------- */
 
@@ -465,8 +470,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 15%;
+    /* margin-left: 10px; */
     & .icone_réseaux {
-        margin: 10px;
         display: flex;
         gap: 10px;
         & img {
