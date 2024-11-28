@@ -162,6 +162,14 @@ section:nth-of-type(3) {
     }
 }
 
+.overlay {}
+
+.folio:hover {
+    color: red;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
 /* -----My Pricing------ */
 
 section:nth-of-type(4) {
@@ -174,7 +182,7 @@ section:nth-of-type(4) {
         margin-bottom: 50px;
     } 
     .trois-colonnes {
-        width: 80%;
+        width: 90%;
         height: auto;
         display: grid;
         grid-auto-rows: 1fr;
