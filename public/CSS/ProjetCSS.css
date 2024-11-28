@@ -320,7 +320,7 @@ section:nth-of-type(6) {
 
 section:nth-of-type(7) {
     width: 100%;
-    height: 500px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,6 +336,7 @@ section:nth-of-type(7) {
         flex-direction: row;
         border: 1px rgb(157, 157, 157) solid;
         margin-left: 50px;
+        margin-bottom: 20px;
         & .img_blog {
             width: 330px;
             height: auto;
@@ -343,7 +344,18 @@ section:nth-of-type(7) {
             background-repeat: no-repeat;
             background-position: center;
             background-size: 450px;
+            
         }
+        & .img_blog2 {
+            width: 330px;
+            height: auto;
+            background-image: url(img/img-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 450px;
+            
+        }
+
         & .blog2 {
             margin: 20px;
             & .blog2_enfant1 {
