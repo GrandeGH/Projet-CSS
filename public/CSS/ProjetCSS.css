@@ -406,10 +406,46 @@ section:nth-of-type(8) {
         align-items: center;
         justify-content: space-around;
         & nav ul {
+            margin-bottom: 3px;
             display: flex;
             align-items: center;
             gap: 15px;
             list-style: none;
+            & a {
+                color: rgb(96, 96, 96);
+                text-decoration: none;
+                font-family: "Archivo Black", sans-serif;
+            }
+            & .close {
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+            }
+        }
+    }
+    & .messagetextarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        & #writesome {
+            padding: 10px;
+            width: 450px;
+            height: 120px;
+            border-radius: 5px;
+            border: 1px rgb(128, 128, 128) solid;
+        }
+        & button {
+            margin-top: 20px;
+            width: 130px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 15px;
+            color: rgb(97, 77, 135);
+            border: 1.5px rgb(97, 77, 135) solid;
+            background-color: transparent;
         }
     }
 }
