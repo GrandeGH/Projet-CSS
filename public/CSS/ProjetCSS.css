@@ -44,7 +44,7 @@ header {
 
 @media (max-width: 570px) {
     header {
-        width: 745px
+        width: 745px;
     }
 }
 
@@ -82,24 +82,35 @@ header {
     }
 }
 
+
+    /* & div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        align-self: start;
+    } */
+
+
+/* ----responsive barber---- */
+
 @media (max-width: 570px) {
     .barber {
-        justify-content: center;
-        display: flex;
         .texte_gris {
-            font-size: 55px;
+            font-size: 70px;
             margin: 0;
         }
         h1 {
             font-size: 80px;
         }
         .font_diff {
-            font-size: 25px;
+            font-size: 30px;
         }
         button {
-            width: 150px;
-            height: 60px;
-            font-size: 16px;
+            width: 200px;
+            height: 90px;
+            font-size: 22px;
+            border-radius: 50px;
         }
     }
 }
@@ -124,6 +135,10 @@ section:first-of-type {
             margin-top: 15px;
         }
     }
+}
+
+@media (max-width: 570px) {
+    
 }
 
 /* -----service------ */
