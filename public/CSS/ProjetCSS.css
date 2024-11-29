@@ -102,13 +102,33 @@ section:first-of-type {
 
 section:nth-of-type(2){
     width: 100%;
-    height: auto;
-    display: flex;
+    height: 400px;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    h1 {
+        margin-bottom: 40px;
+    }
     & .service {
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        & .service2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            & .hover_service {
+            }
+        }
+    }
+    & .hover_service img {
+        width: 50px;
+    }
+    /* & .service {
         width: 80%;
         height: auto;
         gap: 20px;
@@ -134,7 +154,7 @@ section:nth-of-type(2){
             color: rgb(97, 77, 135);
         }
         }
-    }
+    } */
 }
 
 /* -----porfolio------ */
