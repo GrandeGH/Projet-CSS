@@ -438,7 +438,7 @@ section:nth-of-type(5) {
 
 @media (max-width: 570px) {
     section:nth-of-type(5) {
-        width: 760px;
+        width: 780px;
     }
 }
 
