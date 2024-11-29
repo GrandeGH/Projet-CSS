@@ -117,11 +117,17 @@ header {
 
 /* -----about me------ */
 section:first-of-type {
-    width: 100%;
+    width: 90%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-left: 30px;
+    img {
+        width: 100%;
+        height: 400px;
+    }
     & div {
         margin: 10px;
         padding-right: 60px;
@@ -138,7 +144,28 @@ section:first-of-type {
 }
 
 @media (max-width: 570px) {
-    
+    section:first-of-type {
+        margin-left: 170px;
+        flex-direction: column;
+        & img {
+            margin-top: 80px;
+            width: 70%;
+            height: 250px;
+        }
+        .about {
+            justify-content: center;
+            align-items: center;
+            padding-block: 50px;
+            & div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & p {
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 /* -----service------ */
