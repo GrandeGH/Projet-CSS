@@ -31,6 +31,13 @@ hr {
     border: 1px solid rgb(179, 179, 179);
 }
 
+@media (max-width: 570px) {
+    h1 {
+        font-size: 50px;
+
+    }
+}
+
 /* -----------------------------en tête -----------------------------*/
 
 header {
@@ -130,7 +137,6 @@ section:first-of-type {
     }
     & div {
         margin: 10px;
-        padding-right: 60px;
         & button {
             width: 120px;
             height: 40px;
@@ -140,22 +146,29 @@ section:first-of-type {
             border-radius: 30px;
             margin-top: 15px;
         }
+    /* & .about div {
+        display: flex;
+        flex-direction: column;
+    } */
     }
 }
 
+/* -----about me responsive mobile------ */
+
 @media (max-width: 570px) {
     section:first-of-type {
-        margin-left: 170px;
+        margin-left: 25%;
         flex-direction: column;
         & img {
             margin-top: 80px;
-            width: 70%;
+            width: 60%;
             height: 250px;
         }
-        .about {
+        .about>div {
             justify-content: center;
             align-items: center;
-            padding-block: 50px;
+            flex-direction: column;
+            display: flex;
             & div {
                 display: flex;
                 align-items: center;
@@ -163,6 +176,12 @@ section:first-of-type {
             }
             & p {
                 font-size: 30px;
+            }
+            & .DLCV {
+                font-size: 30px;
+                width: 220px;
+                height: 100px;
+                border-radius: 50px;
             }
         }
     }
