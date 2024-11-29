@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°THEORIE°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+
+  }
+
+  .service-card {
+    width: 10rem;
+    height: 10rem;
+    padding: 40px;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .service-card img {
+    width: 60px;
+    margin: 10px;
+
+  }
+  /* hover service card */
+  .hover-service:hover{
+    position: relative;
+    transform: translateY(-15rem);
+  } 
+
+  .hover-service{
+    position: relative;
+    transition: 1s ease-in-out;
+  }
+
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #6b4de6;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .card-text{
+    position: relative;
+    top: 11rem;
+  }
