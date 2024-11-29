@@ -38,7 +38,7 @@ hr {
     }
 }
 
-/* -----------------------------en tête -----------------------------*/
+/* -----------------------------en tête ------------------------------------------------------*/
 
 header {
     padding-top: 1px;
@@ -123,7 +123,7 @@ header {
     }
 }
 
-/* -----about me------ */
+/* -----------------------------------------------------about me------------------------------------------------------- */
 section:first-of-type {
     width: 90%;
     height: auto;
@@ -184,7 +184,7 @@ section:first-of-type {
     }
 }
 
-/* -----service------ */
+/* ------------------------------------------------service--------------------------------------------------- */
 
 section:nth-of-type(2){
     width: 100%;
@@ -246,7 +246,8 @@ section:nth-of-type(2){
 
 @media (max-width: 570px) {
     section:nth-of-type(2) {
-        margin-left: 70px;
+        width: 760px;
+        margin-left: 18px;
         .service {
             flex-direction: column;
             .service2 {
@@ -260,7 +261,7 @@ section:nth-of-type(2){
 
 
 
-/* -----porfolio------ */
+/* ------------------------------------------porfolio----------------------------------------------- */
 
 section:nth-of-type(3) {
     display: flex;
@@ -317,7 +318,7 @@ section:nth-of-type(3) {
     }
 }
 
-/* -----responsive service mobile------ */
+/* -----responsive porfolio mobile------ */
 
 @media (max-width: 570px) {
     section:nth-of-type(3) .porfolio {
@@ -420,6 +421,12 @@ section:nth-of-type(5) {
         font-family: "Archivo Black", sans-serif;
         border-radius: 3px;
         border: none;
+    }
+}
+
+@media (max-width: 570px) {
+    section:nth-of-type(5) {
+        width: 760px;
     }
 }
 
