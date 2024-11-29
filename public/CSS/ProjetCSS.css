@@ -31,7 +31,7 @@ hr {
     border: 1px solid rgb(179, 179, 179);
 }
 
-/* en tête */
+/* -----------------------------en tête -----------------------------*/
 
 header {
     padding-top: 1px;
@@ -40,6 +40,12 @@ header {
     /* background-position: center; */
     width: 100%;
     height: 600px;
+}
+
+@media (max-width: 570px) {
+    header {
+        width: 745px
+    }
 }
 
 .barber {
@@ -440,7 +446,7 @@ section:nth-of-type(8) {
     flex-direction: column;
     align-items: center;
     & h1 {
-        margin: 0;
+        margin-bottom: 20px;
     }
     & .contact_me {
         width: 100%;
