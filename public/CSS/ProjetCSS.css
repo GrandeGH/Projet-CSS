@@ -82,6 +82,28 @@ header {
     }
 }
 
+@media (max-width: 570px) {
+    .barber {
+        justify-content: center;
+        display: flex;
+        .texte_gris {
+            font-size: 55px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 80px;
+        }
+        .font_diff {
+            font-size: 25px;
+        }
+        button {
+            width: 150px;
+            height: 60px;
+            font-size: 16px;
+        }
+    }
+}
+
 /* -----about me------ */
 section:first-of-type {
     width: 100%;
