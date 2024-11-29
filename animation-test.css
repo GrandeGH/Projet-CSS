@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+} 
+ 
+ /* vidéo youtube-------------------------- */
+
+/* div {
+    color: red;
+    background-color: blue;
+    padding: 24px;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    counter-increment: astuce;
+} */
+
+/* h1::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    display: block;
+
+
+    content: url(/public/CSS/img/close_24dp_614D87_FILL0_wght400_GRAD0_opsz24.svg);
+    width: 64px;
+    height: 100%;
+    position: absolute;
+    background-color: blueviolet;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+h1::after {
+    content: " #" counter(astuce);
+} */
+
+
+/* vidéo youtube FIN-------------------------- */
+
+
+/* ---------------------essaie-------------- */
+
+/* .row{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.imgPorfolio img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.imgPorfolio .overlay {
+    width: 0;
+    height: 0;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background: rgba(251, 250, 250, 0.5);
+    transform: translate(-50%, -50%);
+    transition: 0,2s;
+    z-index: -1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPorfolio:hover .overlay {
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 60%;
+    transform: none;
+    z-index: 1;
+} */
+
+/* ---------------------essaie-FIN-------------- */
+
+/* ---------------------essaie-2-------------- */
+section:first-of-type {
+    width: 100%;
+    height: 900px;
+    background-color: aqua;
+    & .porfolio {
+        background-color: blueviolet;
+        width: 90%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-left: 55px;
+        & .imgPorfolio {
+            position: relative;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            overflow: hidden;
+        }
+        & .folio {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s ease-in-out;
+        }
+        & .hover {
+            
+            position: absolute;
+            background-color: rgba(250, 250, 250, 0.8);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        & .imgPorfolio:hover .hover {
+            opacity: 1;
+        }
+        & .textbleu {
+            font-size: 23px;
+            color: yellowgreen;
+        }
+    }
+
+    /* & .imgPorfolio .overlay {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        flex-direction: column;
+        background: rgba(250, 250, 250, 0.7);
+        transform: translate(-50%, -50%);
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & .imgPorfolio:hover .overlay {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        transform: none;
+        z-index: 1;
+    } */
+}
+
+
+
+/* ---------------------essaie-2-FIN-------------- */
+
+/* Style de base de l'élément */
+.hover-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    overflow: hidden; /* S'assure que l'image ne déborde pas */
+  }
+  
+  /* L'image occupe 100% de la largeur et de la hauteur */
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image couvre toute la zone sans déformer */
+    transition: transform 1s ease-in-out; /* Animation d'agrandissement */
+  }
+  
+  .hover-container:hover .background-image {
+    transform: scale(1.1); /* Agrandit l'image de 10% lorsqu'il est survolé */
+  }
+  
+  /* Contenu survolé */
+  .hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 250, 250, 0.8); /* Fond semi-transparent */
+    opacity: 0; /* Invisible au départ */
+    transition: opacity 1s ease-in-out; /* Transition d'apparition */
+  }
+  
+  .hover-container:hover .hover-content {
+    opacity: 1; /* Affiche le contenu au survol */
+  }
+  
+  /* Texte */
+  .hover-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+/* h1::after {
+    content: "     Test After";
+}
+
+section:nth-of-type(1) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        margin-bottom: 50px;
+    }
+    & .porfolio {
+        margin-right: 50px ;
+        width: 85%;
+        height: 400px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        & img {
+            width: 100%;
+            height: 350px
+        }
+    }
+} */
+
+/* -------THEORIE------ */
+
+
+
+/* .imgPortfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+} 
+
+
+.imgPortfolio .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(251, 250, 250, 0.8);
+    transform: translate(-50%, -50%); 
+    transition: 0.2s ; 
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.txtBleu {
+    color: #685aa5;
+    font-family: "arlonbold";
+    font-size: x-large;
+    margin-bottom: 5px;
+}  */
+
+/* Lorsque hover */
+/* .imgPortfolio:hover .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none; 
+    z-index: 1;
+}  */
+
+
+
+/* <div class="overlay">
+                        <div class="txtBleu">Web Designing</div>
+                        <div>Categoty : Web Templates</div>
+                    </div> */
