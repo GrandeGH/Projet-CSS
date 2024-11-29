@@ -51,7 +51,7 @@ header {
 
 @media (max-width: 570px) {
     header {
-        width: 745px;
+        width: 785px;
         height: auto;
     }
 }
@@ -392,6 +392,11 @@ section:nth-of-type(4) {
     }
 }
 
+@media (max-width: 570px) {
+    section:nth-of-type(4) {
+        margin-left: 20px;
+    }
+}
 
 /* -----want to work with me----- */
 
